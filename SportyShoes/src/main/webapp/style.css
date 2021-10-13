@@ -1,0 +1,15 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+
+a:hover{
+	background-color: green;
+	color: yellow;
+}
+
+.nav{
+	text-decoration: none;
+}
+
+#about{
+	font-family: 'Akronim', cursive;
+}

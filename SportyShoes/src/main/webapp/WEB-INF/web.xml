@@ -4,4 +4,77 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  
+  <filter>
+  	<filter-name>LoginFilter</filter-name>
+  	<display-name>LoginFilter</display-name>
+  	<description></description>
+  	<filter-class>com.simplilearn.workshop.LoginFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>LoginFilter</filter-name>
+  	<url-pattern>/LoginFilter</url-pattern>
+  </filter-mapping>
+  <servlet>
+  	<servlet-name>HomePage</servlet-name>
+  	<display-name>HomePage</display-name>
+  	<description></description>
+  	<servlet-class>com.simplilearn.workshop.HomePage</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SignInServlet</servlet-name>
+  	<display-name>SignInServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.simplilearn.workshop.SignInServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdatePassword</servlet-name>
+  	<display-name>UpdatePassword</display-name>
+  	<description></description>
+  	<servlet-class>com.simplilearn.workshop.UpdatePassword</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SearchUser</servlet-name>
+  	<display-name>SearchUser</display-name>
+  	<description></description>
+  	<servlet-class>com.simplilearn.workshop.SearchUser</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ManageProducts</servlet-name>
+  	<display-name>ManageProducts</display-name>
+  	<description></description>
+  	<servlet-class>com.simplilearn.workshop.ManageProducts</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>PurchaseReport</servlet-name>
+  	<display-name>PurchaseReport</display-name>
+  	<description></description>
+  	<servlet-class>com.simplilearn.workshop.PurchaseReport</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>HomePage</servlet-name>
+  	<url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SignInServlet</servlet-name>
+  	<url-pattern>/signIn</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdatePassword</servlet-name>
+  	<url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SearchUser</servlet-name>
+  	<url-pattern>/searchUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ManageProducts</servlet-name>
+  	<url-pattern>/manageProducts</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>PurchaseReport</servlet-name>
+  	<url-pattern>/purchaseReport</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
